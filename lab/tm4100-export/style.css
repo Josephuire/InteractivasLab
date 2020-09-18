@@ -1,0 +1,280 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+}
+
+header{
+    width: 100%;
+}
+input{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: .1em solid #aaabab;
+}
+textarea{
+    border: .1em solid #aaabab;
+}
+footer{
+    width: 100%;
+    padding: .5em 0 .5em;
+    background: #181b1e;
+    text-align: center;
+}
+hr{
+    width: 6em;
+    height: 5px;
+    border: none;
+    background: #ffc36e;
+}
+/*Clases*/
+.secondary-title{
+    text-transform: uppercase;/*Vuelve mayuscula*/
+    font-weight: 300;
+    font-size: 2em;
+}
+/*NAV*/
+.top-bar{
+    width: 100%; /*Ancho*/
+    padding: .5em 0 3em; /*lados: 0(arriba) 0(lados) 0(abajo)*/
+    background: #181b1e; /*fondo*/
+}
+.logo{
+    float: left; /*Lado que uno lo quiere*/
+    margin: .5em 0 0 3em; /*Margen del logo*/
+}
+.top-nav{
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+.top-nav-item{
+    display: inline-block;/*Coloca todos la lista de manera horizontal*/
+    margin: 0 .5em;/*Necesitamos separaralos para que no esten pegados 0(izquiera) 0(ederecha)*/
+}
+.top-nav-link{
+    display: block; /*Desplaza los links en bloque*/
+    font-weight: 300; /*Tamaño de tipografia*/
+    color: #aaabab; /*Color de la tipografia*/
+    text-decoration: none; /*ELimina la linea de hipervinvulo*/
+    padding-bottom: .8em;/*padding de abajo nos ayuda a que no quede muy pegado*/
+}
+/*Interactividad de links permite que cuando el puntero este sobre el link haya una linea*/
+.top-nav-link:hover{
+    color: #ffffff;
+    border-bottom: .3em solid #f44336;/*.3em(grosor), solid(como lo queremos),# color*/
+}
+.request-btn{
+    display: block;
+    padding: .5em;
+    border: .2em solid #00bab2;
+    font-weight: 300;
+    text-transform: uppercase; /*Cambia la tipografia, en este caso toda mayuscula*/
+    color: #ffffff ;
+    text-decoration: none;
+}
+.request-btn-m{
+    margin: 0 3em;
+}
+.request-btn-hover{
+    background: #00bab2 ;
+}
+/*Intro*/
+.intro-section{
+    width: 100%;
+    padding: .5em 0;
+    background: url(../tm4100/img/mountain-bg.jpg);/*Ayuda a llenar el fondo con una imagen*/
+    background-size: cover; /*Que cubra todo*/
+    background-position: center bottom;/*posicion de la imagen*/
+}
+.intro-tittle{
+    padding: 0 1.5em;
+    color: #ffffff;
+    font-weight: 100;
+    font-size: 4em;
+    text-align: center;/*Centra el texto*/
+}
+.download-btn{
+    display: block;
+    margin: auto;
+    width: 8em;
+    padding: 1em;
+    border-radius: .2em;
+    text-align: center;
+    background: #f44336;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 400;
+}
+.btn-label{
+    margin: 0 0 0 .5em;
+}
+/*About*/
+.about-section{
+    padding: 2em 5em;
+    background: #f2f2f2;
+    color: #212121;
+    text-align: center;
+}
+.about-intro{
+    font-size: 1.8em;
+    font-weight: 100;
+}
+.about-text{
+    font-weight: 300;
+}
+/*Quote*/
+.quote-section{
+    padding: 6em 15em;
+    background: url(../tm4100/img/quote-bg.jpg);
+    background-size: cover ;
+    background-position:  center bottom ;
+    text-align: center;
+}
+.quote-icon{
+    color: #f44336;
+}
+.quote-color{
+    color: #181b1e;
+}
+.quote-text{
+    font-weight: 100;
+    color: #ffffff;
+    font-size: 1.5em;
+}
+.quote-author{
+    font-weight: 300;
+    font-size: 1em;
+    color: #00bab2;
+}
+/*Contact*/
+.contact-section{
+    padding: 2em 5em;
+    background: #f2f2f2;
+    color: #212121;
+    text-align: center;
+}
+.contact-form{
+    width: 90%;
+    margin: auto;
+}
+.row{
+    width: 100%;
+}
+.cold{
+    width: 50%;
+    float: left;
+}
+.input-text{
+    width: 90%;
+    padding: 1em;
+}
+.text-area{
+    width: 95%;
+    height: 10em;
+    margin: 2em 0;
+    padding: 1em;
+    font-family: 'Roboto';
+}
+.submit-btn{
+    width: 90%;
+    background: #f2f2f2;
+    border: .2em solid #00bab2;
+    padding: 1em;
+    cursor: pointer;/*Cursor de la manita*/
+}
+.submit-btn:hover{
+    background-attachment: #00bab0;
+    color: #ffffff ;
+}
+/*Footer*/
+.bottom-nav{
+    margin: 0%;
+    padding: 0;
+}.bottom-nav-item{
+    display: inline-block;
+    margin: 1em 2em;
+}
+.footer-link{
+    font-size: 1.5em;
+    color: #626262;
+}
+.footer-link:hover{
+    color: #f44336;
+}
+.footer-disclaimer{
+    color: #626262;
+}
+/*MEDIA QUERIES*/
+@media (max-width: 575.98px){
+    /*Barra hamburguesa*/
+    .mob-menu{
+        display: block;
+        color: #ffffff;
+        font-size: 1.5em;
+        position: absolute;
+        top: .5em;
+        left: .5em;
+    } 
+    .mob-close{
+        display: block;
+        color: #ffffff;
+        font-size: 2em;
+        position: absolute;
+        right: 1em;
+        top: 1em;
+    } 
+    .top-nav{
+        /*display: none;*/
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        padding: 3em 0 0;
+        background: #181b1e;  
+        z-index: 2;/*Orden de apilado*/
+    } 
+    .top-nav-item{
+        display: block;
+    }
+    .top-nav-link{
+        padding: 1em;
+        font-size: 1.3em;
+    }
+    .request-btn{
+        font-size: 1.3em;
+    }
+    .request-btn-m{
+        margin 0;
+    }
+
+
+
+    .intro-section{
+        padding: 2em 0;
+    }
+    .intro-tittle{
+        font-size: 2em;
+    }
+    .about-section{
+        padding: 2em 2em;
+    }
+    .quote-section{
+        padding: 6em 5em;
+    }
+    .contact-section{
+        padding: 2em 2em;
+    }
+    .col{
+        width: 100%;
+        margin: 2em 0 0;
+    }
+    .text-area{
+        width: 90%;
+    }
+    .bottom-nav-item{
+      margin: 1em 1em;  
+    }
+}
+/*Small devices (landscape phones, less than 768px)*/
